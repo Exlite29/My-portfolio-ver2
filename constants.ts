@@ -3,7 +3,7 @@ import { Project, Experience, SkillCategory } from './types';
 export const USER_INFO = {
   name: "Ariel D. Agdon",
   username: "arielagdon",
-  role: "Jr. Front-End Developer",
+  role: "Front-End Developer",
   bio: "Dynamic Developer adept in React.js & TypeScript. Passionate about UI/UX, performance optimization, and bridging the gap between frontend and backend.",
   location: "Valencia City, Bukidnon",
   email: "arielagdon@yahoo.com",
@@ -27,7 +27,9 @@ export const PROJECTS: Project[] = [
     ],
     private: false,
     updatedAt: "Updated 2 days ago",
-    language: "TypeScript"
+    language: "TypeScript",
+    demoUrl: "https://next-mba-demo.vercel.app", // Placeholder
+    repoUrl: "https://github.com/arielagdon/next-mba"
   },
   {
     name: "RevScout",
@@ -42,7 +44,9 @@ export const PROJECTS: Project[] = [
     ],
     private: true,
     updatedAt: "Updated 1 week ago",
-    language: "TypeScript"
+    language: "TypeScript",
+    demoUrl: "https://revscout-demo.com", 
+    repoUrl: "" // Private repo
   },
   {
     name: "OMS-Grocket",
@@ -57,7 +61,8 @@ export const PROJECTS: Project[] = [
     ],
     private: true,
     updatedAt: "Updated 2 weeks ago",
-    language: "TypeScript"
+    language: "TypeScript",
+    demoUrl: "https://oms-grocket-preview.com",
   },
   {
     name: "Dujas",
@@ -72,7 +77,9 @@ export const PROJECTS: Project[] = [
     ],
     private: false,
     updatedAt: "Updated 1 month ago",
-    language: "JavaScript"
+    language: "JavaScript",
+    demoUrl: "https://dujas-booking.com",
+    repoUrl: "https://github.com/arielagdon/dujas"
   }
 ];
 

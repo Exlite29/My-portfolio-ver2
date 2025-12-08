@@ -8,6 +8,8 @@ export interface Project {
   private: boolean;
   updatedAt: string;
   language: string; // Primary language for color dot
+  demoUrl?: string; // Link to the live website
+  repoUrl?: string; // Link to the code (optional)
 }
 
 export interface Experience {
