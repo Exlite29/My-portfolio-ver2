@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, Link as LinkIcon, Users, Building, Briefcase } from 'lucide-react';
+import { MapPin, Mail, Link as LinkIcon, Users, Building, Linkedin, Github } from 'lucide-react';
 import { USER_INFO } from '../constants';
 
 const ProfileSidebar: React.FC = () => {
@@ -8,7 +8,7 @@ const ProfileSidebar: React.FC = () => {
       {/* Avatar Section */}
       <div className="relative group mx-auto md:mx-0">
         <img 
-          src="https://picsum.photos/300/300" 
+          src={USER_INFO.avatar}
           alt="Profile" 
           className="w-48 h-48 md:w-[296px] md:h-[296px] rounded-full border border-gh-border z-10 bg-gh-bg object-cover shadow-md"
         />
@@ -67,6 +67,18 @@ const ProfileSidebar: React.FC = () => {
           <LinkIcon size={16} className="text-gh-muted shrink-0" />
           <a href={USER_INFO.website} target="_blank" rel="noreferrer" className="hover:text-gh-link hover:underline truncate">
             {USER_INFO.website}
+          </a>
+        </div>
+        <div className="flex items-center gap-2">
+          <Github size={16} className="text-gh-muted shrink-0" />
+          <a href={USER_INFO.github} target="_blank" rel="noreferrer" className="hover:text-gh-link hover:underline truncate">
+            {USER_INFO.username}
+          </a>
+        </div>
+        <div className="flex items-center gap-2">
+          <Linkedin size={16} className="text-gh-muted shrink-0" />
+          <a href={USER_INFO.linkedin} target="_blank" rel="noreferrer" className="hover:text-gh-link hover:underline truncate">
+            LinkedIn Profile
           </a>
         </div>
       </div>

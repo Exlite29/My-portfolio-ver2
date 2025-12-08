@@ -2,13 +2,16 @@ import { Project, Experience, SkillCategory } from './types';
 
 export const USER_INFO = {
   name: "Ariel D. Agdon",
-  username: "arielagdon",
+  username: "Exlite29",
   role: "Front-End Developer",
   bio: "Dynamic Developer adept in React.js & TypeScript. Passionate about UI/UX, performance optimization, and bridging the gap between frontend and backend.",
   location: "Valencia City, Bukidnon",
   email: "arielagdon@yahoo.com",
   phone: "+63 905 076 6199",
   website: "https://ariel-portfolio.dev",
+  github: "https://github.com/Exlite29",
+  linkedin: "https://www.linkedin.com/in/ariel-agdon-916846160/",
+  avatar: "https://github.com/Exlite29.png", // Pulls from GitHub. Change to "/your-image.png" if you add a local file.
   followers: 42,
   following: 15,
 };
@@ -29,7 +32,7 @@ export const PROJECTS: Project[] = [
     updatedAt: "Updated 2 days ago",
     language: "TypeScript",
     demoUrl: "https://next-mba-demo.vercel.app", // Placeholder
-    repoUrl: "https://github.com/arielagdon/next-mba"
+    repoUrl: "https://github.com/Exlite29/next-mba"
   },
   {
     name: "RevScout",
@@ -79,7 +82,7 @@ export const PROJECTS: Project[] = [
     updatedAt: "Updated 1 month ago",
     language: "JavaScript",
     demoUrl: "https://dujas-booking.com",
-    repoUrl: "https://github.com/arielagdon/dujas"
+    repoUrl: "https://github.com/Exlite29/dujas"
   }
 ];
 
