@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
     private: false,
     updatedAt: "Updated 2 days ago",
     language: "TypeScript",
-    demoUrl: "https://next-mba-demo.vercel.app", // Placeholder
+    demoUrl: "https://admin.nextmba.com/login", 
     repoUrl: "https://github.com/Exlite29/next-mba"
   },
   {
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
     private: true,
     updatedAt: "Updated 2 weeks ago",
     language: "TypeScript",
-    demoUrl: "https://oms-grocket-preview.com",
+    demoUrl: "https://g-rocket.me/",
   },
   {
     name: "Dujas",
@@ -81,7 +81,7 @@ export const PROJECTS: Project[] = [
     private: false,
     updatedAt: "Updated 1 month ago",
     language: "JavaScript",
-    demoUrl: "https://dujas-booking.com",
+    demoUrl: "https://dujascleaning.com/",
     repoUrl: "https://github.com/Exlite29/dujas"
   }
 ];
