@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, Mail, Link as LinkIcon, Users, Building, Linkedin, Github } from 'lucide-react';
 import { USER_INFO } from '../constants';
 
 const ProfileSidebar: React.FC = () => {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <div className="w-full md:w-1/4 flex flex-col gap-5 relative md:-top-8">
       {/* Avatar Section */}
       <div className="relative group mx-auto md:mx-0">
-        <img 
-          src={USER_INFO.avatar}
-          alt="Profile" 
-          className="w-48 h-48 md:w-[296px] md:h-[296px] rounded-full border border-gh-border z-10 bg-gh-bg object-cover shadow-md"
-        />
+        {!imgError ? (
+          <img 
+            src={USER_INFO.avatar}
+            alt="Profile" 
+            className="w-48 h-48 md:w-[296px] md:h-[296px] rounded-full border border-gh-border z-10 bg-gh-bg object-cover shadow-md"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="w-48 h-48 md:w-[296px] md:h-[296px] rounded-full border border-gh-border z-10 bg-gh-card flex items-center justify-center shadow-md">
+            <span className="text-5xl md:text-7xl font-bold text-gh-muted">AA</span>
+          </div>
+        )}
+        
         <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-gh-card border border-gh-border rounded-full text-lg shadow-sm cursor-pointer hover:bg-gh-border transition-colors group-hover:scale-110 duration-200">
           🎯
         </div>
