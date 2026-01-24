@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { MapPin, Mail, Link as LinkIcon, Users, Building, Linkedin, Github } from 'lucide-react';
 import { USER_INFO } from '../constants';
@@ -15,6 +16,7 @@ const ProfileSidebar: React.FC = () => {
             alt="Profile" 
             className="w-48 h-48 md:w-[296px] md:h-[296px] rounded-full border border-gh-border z-10 bg-gh-bg object-cover shadow-md"
             onError={() => setImgError(true)}
+            referrerPolicy="no-referrer"
           />
         ) : (
           <div className="w-48 h-48 md:w-[296px] md:h-[296px] rounded-full border border-gh-border z-10 bg-gh-card flex items-center justify-center shadow-md">
@@ -42,9 +44,12 @@ const ProfileSidebar: React.FC = () => {
         {USER_INFO.bio}
       </div>
 
-      <button className="w-full bg-gh-btn hover:bg-gh-btnHover border border-gh-border text-gh-text font-semibold py-1.5 rounded-md transition-colors text-sm shadow-sm">
-        Edit profile
-      </button>
+      <a 
+        href={`mailto:${USER_INFO.email}`}
+        className="w-full bg-gh-btn hover:bg-gh-btnHover border border-gh-border text-gh-text font-semibold py-1.5 rounded-md transition-colors text-sm shadow-sm text-center"
+      >
+        Contact Me
+      </a>
 
       {/* Follow stats */}
       <div className="flex items-center justify-center md:justify-start gap-4 text-sm text-gh-muted">
@@ -76,7 +81,7 @@ const ProfileSidebar: React.FC = () => {
         <div className="flex items-center gap-2">
           <LinkIcon size={16} className="text-gh-muted shrink-0" />
           <a href={USER_INFO.website} target="_blank" rel="noreferrer" className="hover:text-gh-link hover:underline truncate">
-            {USER_INFO.website}
+            {USER_INFO.website.replace('https://', '')}
           </a>
         </div>
         <div className="flex items-center gap-2">

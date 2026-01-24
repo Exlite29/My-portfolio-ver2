@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { BookOpen, Box, Layout, Star, Book, Menu, X, Terminal, Server, Briefcase, Award } from 'lucide-react';
 import ProfileSidebar from './components/ProfileSidebar';
@@ -37,7 +38,7 @@ const App: React.FC = () => {
                 <h2 className="text-2xl font-bold border-b border-gh-border pb-2 mb-4">Hi there, I'm Ariel! 👋</h2>
                 <p className="mb-4 text-gh-text">
                   I'm a <strong>Junior Front-End Developer</strong> with 2 years of experience building responsive, user-centric web applications. 
-                  Currently working at <strong>Web Catalyst</strong>.
+                  Currently working at <strong>Web Catalyst</strong>. You can view my latest portfolio version at <a href={USER_INFO.website} target="_blank" rel="noopener noreferrer" className="text-gh-link hover:underline font-semibold">{USER_INFO.website.replace('https://', '').replace(/\/$/, '')}</a>.
                 </p>
                 <p className="mb-4 text-gh-text">
                   I specialize in <strong>React.js</strong> and <strong>TypeScript</strong>, but I also love getting my hands dirty with backend logic using Node.js and SQL/NoSQL databases.

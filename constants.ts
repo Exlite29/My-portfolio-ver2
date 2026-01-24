@@ -1,3 +1,4 @@
+
 import { Project, Experience, SkillCategory } from './types';
 
 export const USER_INFO = {
@@ -8,15 +9,32 @@ export const USER_INFO = {
   location: "Valencia City, Bukidnon",
   email: "arielagdon@yahoo.com",
   phone: "+63 905 076 6199",
-  website: "https://ariel-portfolio.dev",
+  website: "https://my-portfolio-ver2-sigma.vercel.app/",
   github: "https://github.com/Exlite29",
   linkedin: "https://www.linkedin.com/in/ariel-agdon-916846160/",
-  avatar: "https://github.com/Exlite29.png", // Pulls from GitHub. Change to "/your-image.png" if you add a local file.
+  avatar: "https://avatars.githubusercontent.com/u/45147493?v=4", 
   followers: 42,
   following: 15,
 };
 
 export const PROJECTS: Project[] = [
+  {
+    name: "Portfolio V2",
+    description: "The latest iteration of my professional portfolio featuring improved performance, cleaner UI, and modern React patterns.",
+    tags: ["React", "Vercel", "Tailwind CSS"],
+    frontend: "React, TypeScript, Tailwind CSS, Lucide Icons",
+    backend: "Vercel Analytics, Serverless Deployment",
+    features: [
+      "Optimized for core web vitals",
+      "Dynamic project rendering",
+      "Responsive design for all devices"
+    ],
+    private: false,
+    updatedAt: "Updated now",
+    language: "TypeScript",
+    demoUrl: "https://my-portfolio-ver2-sigma.vercel.app/",
+    repoUrl: "https://github.com/Exlite29/my-portfolio-ver2"
+  },
   {
     name: "Next-MBA",
     description: "A high-performance, scalable online learning platform (MOOC) similar to Coursera or Udemy using SSR/SSG.",
@@ -49,7 +67,7 @@ export const PROJECTS: Project[] = [
     updatedAt: "Updated 1 week ago",
     language: "TypeScript",
     demoUrl: "https://revscout-demo.com", 
-    repoUrl: "" // Private repo
+    repoUrl: "" 
   },
   {
     name: "OMS-Grocket",
