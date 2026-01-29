@@ -12,7 +12,7 @@ export const USER_INFO = {
   website: "https://my-portfolio-ver2-sigma.vercel.app/",
   github: "https://github.com/Exlite29",
   linkedin: "https://www.linkedin.com/in/ariel-agdon-916846160/",
-  avatar: "https://avatars.githubusercontent.com/u/45147493?v=4", 
+  avatar: "/profile-pic.png", 
   followers: 42,
   following: 15,
 };
